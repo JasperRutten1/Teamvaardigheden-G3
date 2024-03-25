@@ -4,6 +4,7 @@
     --bgNavAColor: #7895CB;
     --bgNavAHoverColor: #1b4084;
     --bgActivePage: #86a6e3;
+    --bgDivTools: #DDDDDD;
 }
 
 * {
@@ -51,7 +52,34 @@ header ul li a:hover {
     border-color: var(--bgNavAHoverColor);
 }
 
+/* Ai Tools Page */
 
-.aitools {
-    color: blue;
+#pageIntro {
+   margin: 2ch;
+}
+
+.tools {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1ch;
+    padding: 2ch;
+}
+
+.tools div {
+    background-color: var(--bgDivTools);
+    padding: 2ch;
+}
+
+/* smaller screen agustment */
+@media (max-width: 650px) {
+
+    /* all pages header */
+    header ul{
+        
+    }
+
+    /* Ai Tools pagina */
+    .tools {
+        grid-template-columns: 1fr;
+    }
 }
