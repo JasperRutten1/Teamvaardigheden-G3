@@ -27,7 +27,8 @@ header ul {
     display: flex;
     list-style-type: none;
     padding: 3ch;
-}   
+}
+
 header ul li {
     margin: 0 1ch 0;
 }
@@ -48,4 +49,9 @@ header ul li a {
 
 header ul li a:hover {
     border-color: var(--bgNavAHoverColor);
+}
+
+
+.aitools {
+    color: blue;
 }
