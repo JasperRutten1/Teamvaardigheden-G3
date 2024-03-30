@@ -68,6 +68,12 @@ header ul li a:hover {
 .tools div {
     background-color: var(--bgDivTools);
     padding: 2ch;
+    border: 2px solid transparent;
+}
+
+.tools div:hover {
+    border-color: var(--bgNavColor);
+    box-shadow: 10px 10px 50px var(--bgNavColor);
 }
 
 /* smaller screen agustment */
