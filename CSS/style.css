@@ -24,13 +24,13 @@ header {
     background-color: var(--bgNavColor);
 }
 
-header ul {
+header nav ul {
     display: flex;
     list-style-type: none;
     padding: 3ch;
 }
 
-header ul li {
+header nav ul li {
     margin: 0 1ch 0;
 }
 
@@ -38,7 +38,8 @@ header ul li {
     background-color: var(--bgActivePage);
 }
 
-header ul li a {
+header nav ul li a {
+    display: block;
     text-decoration: none;
     color: black;
     font-size: larger;
@@ -48,7 +49,7 @@ header ul li a {
     border: 2px solid transparent;
 }
 
-header ul li a:hover {
+header nav ul li a:hover {
     border-color: var(--bgNavAHoverColor);
 }
 
@@ -79,9 +80,14 @@ header ul li a:hover {
 /* smaller screen agustment */
 @media (max-width: 650px) {
 
-    /* all pages header */
-    header ul{
-        
+    /* header all pages */
+    header nav {
+        width: 100%;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 1ch;
     }
 
     /* Ai Tools pagina */
