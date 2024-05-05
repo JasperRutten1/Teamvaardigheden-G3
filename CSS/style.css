@@ -56,7 +56,7 @@ header nav ul li a:hover {
 /* Ai Tools Page */
 
 #pageIntro {
-   margin: 2ch;
+    margin: 2ch;
 }
 
 .tools {
@@ -78,7 +78,16 @@ header nav ul li a:hover {
 }
 
 /* history page */
+.HistoryPageMain section {
+    padding: 2ch;
+    margin: 2ch;
+    background-color: #DDDDDD;
+}
 
+.HistoryPageMain section:hover {
+    border-color: var(--bgNavColor);
+    box-shadow: 10px 10px 50px var(--bgNavColor);
+}
 
 /* end pqge */
 
