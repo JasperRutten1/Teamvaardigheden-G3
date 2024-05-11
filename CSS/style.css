@@ -66,6 +66,76 @@ header nav ul li a:hover {
 }
 
 /* Socials page */
+div#socials-page{
+    width: 80%;
+    margin: 1rem 10%;
+    background-color: #DDDDDD;
+    border-radius: 1rem;
+}
+
+h1.socials-title, h2.socials-title{
+    margin: 1rem 1.5rem;
+    font-size: 2.5rem;
+}
+
+form#contact-form{
+    margin: 0.5rem 1.5rem;
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+form#contact-form div.form-fields{
+    display: flex;
+    flex-direction: column;
+    margin: 0 0.5rem;
+}
+
+div.field label, div.field input{
+    margin: 0 0.5rem 0 0;
+    font-size: 1.3rem;
+}
+
+form#contact-form div#contact-fields{
+    justify-content: space-between;
+}
+
+form#contact-form div#contact-fields div.field{
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+form#contact-form div#question-field div.field{
+    display: flex;
+    flex-direction: column;
+}
+
+form#contact-form div#question-field div.field label, form#contact-form div#question-field div.field textarea{
+    margin: 0 0.2rem;
+}
+
+form#contact-form div#question-field input#contact-submit{
+    margin: 1rem 1rem;
+    height: 2rem;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+}
+
+div#socials-page div#socials{
+    margin: 0.5rem 1.5rem;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+div#socials-page div#socials a.social-btn{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+div#socials-page div#socials a.social-btn img{
+    max-width: 25%;
+}
 
 /* Ai Tools Page */
 

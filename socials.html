@@ -21,30 +21,44 @@
         </nav>
     </header>
     <main>
-        <h1>Contact Formulier</h1>
-    <form>
-        <label for="fname">First name:</label><br>
-        <input type="text" id="fname" name="fname" value=""><br>
-        <label for="lname">Last name:</label><br>
-        <input type="text" id="lname" name="lname" value=""><br>
-        <label for="tnum">Telefoon nummer:</label><br>
-        <input type="text" id="tnum" name="tnum" value=""><br>
-        <label for="email">Email:</label><br>
-        <input type="text" id="email" name="email" value=""><br>
-        <br>
-        <label for="vrg">Uw vraag...</label><br>
-        <input type="text" id="vrg" name="vrg" value=""><br>
-        <input type="submit" value="Submit">
-    </form>
+        <div id="socials-page">
+            <h1 class="socials-title">Contact Formulier</h1>
+            <form id="contact-form">
+                <div id="contact-fields" class="form-fields">
+                    <div class="field">
+                        <label for="fname">First name:</label>
+                        <input type="text" id="fname" name="fname" value="">
+                    </div>
+                    <div class="field">
+                        <label for="lname">Last name:</label>
+                        <input type="text" id="lname" name="lname" value="">
+                    </div>
+                    <div class="field">
+                        <label for="tnum">Telefoon nummer:</label>
+                        <input type="text" id="tnum" name="tnum" value="">
+                    </div>
+                    <div class="field">
+                        <label for="email">Email:</label>
+                        <input type="text" id="email" name="email" value="">
+                    </div>
+                </div>
+                <div id="question-field" class="form-fields">
+                    <div class="field">
+                        <label for="vrg">Uw vraag...</label>
+                        <textarea name="vrg" id="vrg" rows="10"></textarea>
+                    </div>
+                    <input id="contact-submit" type="submit" value="Submit">
+                </div>
+            </form>
 
-    <h2>Socials</h2>
-    <form>
+            <h2 class="socials-title">Socials</h2>
+            <div id="socials">
+                <a href="https://www.instagram.com/" target="_blank" class="social-btn instagram"><img src="images/socials/instagram-logo.png" alt="instagram"></a>
+                <a href="https://www.facebook.com/" target="_blank" class="social-btn facebook"><img src="images/socials/facebook-logo.png" alt="facebook"></a>
+                <a href="https://twitter.com/" target="_blank" class="social-btn twitter"><img src="images/socials/x-logo.png" alt="x"></a>
+            </div>
+        </div>
 
-        <a href="https://www.instagram.com/" target="_blank" class="social-btn instagram">Instagram</a>
-        <a href="https://www.facebook.com/" target="_blank" class="social-btn facebook">Facebook</a>
-        <a href="https://twitter.com/" target="_blank" class="social-btn twitter">Twitter</a>
-
-    </form>
     </main>
 </body>
 
