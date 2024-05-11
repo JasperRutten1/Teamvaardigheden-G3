@@ -93,6 +93,7 @@ form#contact-form div.form-fields{
 div.field label, div.field input{
     margin: 0 0.5rem 0 0;
     font-size: 1.3rem;
+    border-radius: 0.3rem;
 }
 
 form#contact-form div#contact-fields{
@@ -111,6 +112,12 @@ form#contact-form div#question-field div.field{
 
 form#contact-form div#question-field div.field label, form#contact-form div#question-field div.field textarea{
     margin: 0 0.2rem;
+}
+
+form#contact-form div#question-field div.field textarea{
+    margin: 0.5rem 0.2rem;
+    height: 15rem;
+    border-radius: 0.3rem;
 }
 
 form#contact-form div#question-field input#contact-submit{
@@ -135,6 +142,7 @@ div#socials-page div#socials a.social-btn{
 
 div#socials-page div#socials a.social-btn img{
     max-width: 25%;
+    border-radius: 0.5rem;
 }
 
 /* Ai Tools Page */
