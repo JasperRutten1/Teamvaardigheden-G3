@@ -18,48 +18,47 @@ body {
 }
 
 header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     background-color: var(--bgNavColor);
-    padding: 0.3rem 1.5rem;
-}
-
-
-header ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-header img#logo{
-    width: 20%;
-    
+    padding: 0.5rem 2rem;
 }
 
 header nav ul {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     list-style-type: none;
-    padding: 3ch;
 }
 
 header nav ul li {
-    margin: 0 1ch 0;
+    margin: 0;
+    width: 25%;
 }
 
 #activePage {
     background-color: var(--bgActivePage);
 }
 
-header nav ul li a {
+header nav ul li a#logo-button{
+    margin: 0 1rem 0 0;
+    padding: 0.2rem;
+}
+
+header nav ul li a{
     display: block;
+    height: 100%;
+    padding: 1.5rem 1rem;
+    margin: 1rem;
+}
+
+header nav ul li a.nav-button {
     text-decoration: none;
     color: black;
     font-size: larger;
-    padding: 1ch;
     background: var(--bgNavAColor);
     border-radius: 1ch;
     border: 2px solid transparent;
+    text-align: center;
 }
 
 header nav ul li a:hover {
