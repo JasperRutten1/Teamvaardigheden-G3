@@ -39,12 +39,12 @@ header nav ul li {
     background-color: var(--bgActivePage);
 }
 
-header nav ul li a#logo-button{
+header nav ul li a#logo-button {
     margin: 0 1rem 0 0;
     padding: 0.2rem;
 }
 
-header nav ul li a{
+header nav ul li a {
     display: block;
     height: 100%;
     padding: 1.5rem 1rem;
@@ -64,90 +64,94 @@ header nav ul li a.nav-button {
 header nav ul li a:hover {
     border-color: var(--bgNavAHoverColor);
 }
+
 /**
 ----------------------------------------------------------------------------
 Socials page
 ----------------------------------------------------------------------------
  */
 
-div#socials-page{
+div#socials-page {
     width: 80%;
     margin: 1rem 10%;
     background-color: #DDDDDD;
     border-radius: 1rem;
 }
 
-h1.socials-title, h2.socials-title{
+h1.socials-title,
+h2.socials-title {
     margin: 1rem 1.5rem;
     font-size: 2.5rem;
 }
 
-form#contact-form{
+form#contact-form {
     margin: 0.5rem 1.5rem;
     display: grid;
     grid-template-columns: 40% 60%;
 }
 
-div.field label, div.field input{
+div.field label,
+div.field input {
     margin: 0 0.5rem 0 0;
     font-size: 1.3rem;
     border-radius: 0.3rem;
 }
 
-form#contact-form div#contact-fields{
+form#contact-form div#contact-fields {
     display: flex;
     flex-direction: column;
     margin: 0 0.5rem 1.5rem 0;
     justify-content: space-between;
 }
 
-form#contact-form div#contact-fields div.field{
+form#contact-form div#contact-fields div.field {
     display: grid;
     grid-template-columns: 40% 60%;
 }
 
-form#contact-form div#question-field{
+form#contact-form div#question-field {
     display: grid;
     grid-template-rows: 80% 20%;
     margin: 0 0.5rem;
 }
 
-form#contact-form div#question-field div.field{
+form#contact-form div#question-field div.field {
     display: flex;
     flex-direction: column;
 }
 
-form#contact-form div#question-field div.field label, form#contact-form div#question-field div.field textarea{
+form#contact-form div#question-field div.field label,
+form#contact-form div#question-field div.field textarea {
     margin: 0 0.2rem;
 }
 
-form#contact-form div#question-field div.field textarea{
+form#contact-form div#question-field div.field textarea {
     margin: 0.5rem 0.2rem;
     height: 15rem;
     border-radius: 0.3rem;
 }
 
-form#contact-form div#question-field input#contact-submit{
+form#contact-form div#question-field input#contact-submit {
     margin: 1rem 1rem;
     height: 2rem;
     border-radius: 1rem;
     font-size: 1.5rem;
 }
 
-div#socials-page div#socials{
+div#socials-page div#socials {
     margin: 0.5rem 1.5rem;
     display: grid;
     grid-template-columns: auto auto auto;
 }
 
-div#socials-page div#socials a.social-btn{
+div#socials-page div#socials a.social-btn {
     text-decoration: none;
     color: black;
     font-size: 1.5rem;
     text-align: center;
 }
 
-div#socials-page div#socials a.social-btn img{
+div#socials-page div#socials a.social-btn img {
     max-width: 25%;
     border-radius: 0.5rem;
 }
@@ -156,6 +160,7 @@ div#socials-page div#socials a.social-btn img{
 
 #pageIntro {
     margin: 2ch;
+    border-radius: 7px;
 }
 
 .tools {
