@@ -65,6 +65,25 @@ header nav ul li a:hover {
     border-color: var(--bgNavAHoverColor);
 }
 
+.tools {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1ch;
+    padding: 2ch;
+}
+
+.tools div {
+    background-color: var(--bgDivTools);
+    padding: 2ch;
+    border: 2px solid transparent;
+}
+
+.tools div:hover {
+    border-color: var(--bgNavColor);
+    box-shadow: 10px 10px 50px var(--bgNavColor);
+}
+
+
 /**
 ----------------------------------------------------------------------------
 Socials page
@@ -163,20 +182,45 @@ div#socials-page div#socials a.social-btn img {
     border-radius: 7px;
 }
 
-.tools {
+ul {
+    list-style-type: none;
+}
+
+.categories ul {
+    display: flex;
+    flex-direction: row;
+
+    button {
+        margin-left: 2ch;
+        padding: 1ch;
+        border-radius: 7px;
+        cursor: pointer;
+    }
+}
+
+.categories h3 {
+    margin-left: 2ch;
+}
+
+.button-active {
+    background-color: #444;
+    color: #fff;
+}
+
+.tool {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1ch;
     padding: 2ch;
 }
 
-.tools div {
+.tool div {
     background-color: var(--bgDivTools);
     padding: 2ch;
     border: 2px solid transparent;
 }
 
-.tools div:hover {
+.tool div:hover {
     border-color: var(--bgNavColor);
     box-shadow: 10px 10px 50px var(--bgNavColor);
 }

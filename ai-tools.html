@@ -6,13 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI-Tools</title>
     <link rel="stylesheet" href="CSS/style.css">
+    <script src="scripts/ai-tools.js" defer></script>
 </head>
 
 <body>
     <header>
         <nav id="navigation">
             <ul>
-                <li><a id="logo-button" href="home.html"><img id="logo" src="images/logo_nl.svg" alt="UCLL logo"></a></li>
+                <li><a id="logo-button" href="home.html"><img id="logo" src="images/logo_nl.svg" alt="UCLL logo"></a>
+                </li>
                 <li><a class="nav-button" id="activePage" href="home.html">Home</a></li>
                 <li><a class="nav-button" href="socials.html">Sociale media</a></li>
                 <li><a class="nav-button" href="ai-story.html">Geschiedenis AI</a></li>
@@ -21,90 +23,170 @@
         </nav>
     </header>
     <main>
+
         <div id="pageIntro">
             <h1>Tools</h1>
             <br>
-            <p>Ai-Tools zijn gemaakt voor het opzoeken en maken van dingen. makkelijker te maken, Dit kan veel tijd besparen aant opzoekwerk of aan het lezen van boeken.
-                Dit betekend dus dat het heel nuttig kan zijn voor medewerkers van bedrijven om tijd uit te sparen, Of gewoon voor studenten die aant studeren zijn.
+            <p>Ai-Tools zijn gemaakt voor het opzoeken en maken van dingen. makkelijker te maken, Dit kan veel tijd
+                besparen aant opzoekwerk of aan het lezen van boeken.
+                Dit betekend dus dat het heel nuttig kan zijn voor medewerkers van bedrijven om tijd uit te sparen, Of
+                gewoon voor studenten die aant studeren zijn.
             </p>
         </div>
-        <section class="tools">
-            <div>
-                <h2>ChatGPT</h2>
-                <br>
-                <p>
-                    ChatGPT is een AI-chatbot die natuurlijke gesprekken kan voeren. Het helpt stadsmedewerkers snel
-                    antwoorden te vinden op vragen en beleid te verduidelijken. Het is een handige tool om efficiëntie te
-                    verhogen en snelle ondersteuning te bieden binnen de stadscontext.
-                </p>
-            </div>
-            <div>
-                <h2>Canva</h2>
-                <br>
-                <p>
-                    Canva AI is een verzameling van door kunstmatige intelligentie aangedreven functies en tools die zijn geïntegreerd in het Canva grafisch ontwerpplatform. 
-                    Canva is een populaire online tool die wordt gebruikt voor het maken van een breed scala aan ontwerpen, 
-                    waaronder sociale media graphics, presentaties, posters, logo's en meer.
-                    Canva AI bevat verschillende functies die zijn ontworpen om het ontwerpproces te verbeteren en gebruikers te helpen bij het efficiënter maken van professioneel ogende ontwerpen. 
-                </p>
-            </div>
-            <div>
-                <h2>Trello</h2>
-                <br>
-                <p>
-                    Trello is een projectmanagementtool die gebruikers helpt bij het organiseren van taken, projecten en teams. 
-                    Met Trello kunnen gebruikers taken visualiseren en organiseren met behulp van kaarten die op borden zijn geplaatst. 
-                    Trello AI verwijst naar de functionaliteit binnen Trello die kunstmatige intelligentie (AI) en machine learning (ML) 
-                    gebruikt om gebruikers te helpen bij het beheren en organiseren van taken op een efficiëntere manier.
-                </p>
-            </div>
-            <div>
-                <h2>Bing</h2>
-                <br>
-                <p>
-                    Bing AI verwijst naar de kunstmatige intelligentie (AI) die is geïntegreerd in de zoekmachine Bing van Microsoft. 
-                    Deze AI-functies zijn bedoeld om de zoekervaring van gebruikers te verbeteren door relevante zoekresultaten te leveren, 
-                    suggesties te doen en de algehele bruikbaarheid van de zoekmachine te verbeteren.
-                </p>
-            </div>
-            <div>
-                <h2>Grammerly</h2>
-                <br>
-                <p>
-                    Grammarly is een Engelse taalondersteuningstool die gebruikers helpt bij het verbeteren van hun schrijfvaardigheid en grammatica in het Engels.
-                    Het biedt verschillende functies die zijn ontworpen om fouten in spelling, 
-                    grammatica en interpunctie te identificeren en suggesties te geven voor verbeteringen. Hoewel Grammarly voornamelijk gericht is op de Engelse taal, 
-                    biedt het ook ondersteuning voor andere talen, waaronder het Nederlands.
-                </p>
-            </div>
-            <div>
-                <h2>Google Gemini</h2>
-                <br>
-                <p>
-                    Google Gemini is een advertentieplatform dat wordt aangeboden door Google en specifiek gericht is op mobiele advertenties. 
-                    Het platform is ontworpen om adverteerders te helpen bij het bereiken van hun doelgroep op mobiele apparaten, zoals smartphones en tablets, 
-                    en om advertentiecampagnes te optimaliseren voor mobiele gebruikerservaringen.
-                </p>
-            </div>
-            <div>
-                <h2>Blackbox</h2>
-                <br>
-                <p>
-                    Blackbox is een ai die op basis van input je kan helpen met het ontwikkelen van sofware. de ai is geintrigreed met verschillende programmeringstalen.
-                    dit betekent dat je van blackbox kan helpen met bijna elke programmeertaal. 
-                    ook is het gemakkelijk om in blackbox imagels als input te geven de ai leest dan de image en geeft je een zo goed antwoord moogelijk terug op de vraag die je bij de foto stelden.
-                    Dit kan zijn als je bijvoorbeeld uitleg vraagt over de code. of als je de code niet begrijpt.
-                </p>
-            </div>
-            <div>
-                <h2>Mailbutler</h2>
-                <br>
-                <p>
-                    Mailbutler is een productiviteitstool voor e-mail die is ontworpen om de efficiëntie van e-mailgebruik te verbeteren.
-                    Het is een add-on of extensie die beschikbaar is voor populaire e-mailclients zoals Apple Mail, Gmail en Outlook. 
-                    Mailbutler voegt extra functies en mogelijkheden toe aan deze e-mailclients om gebruikers te helpen bij het beheren van hun e-mailcommunicatie op een meer georganiseerde en productieve manier.
-                </p>
-            </div>
+        <div class="categories">
+            <h3>Categorieen:</h3>
+            <ul class="category-button">
+                <li><button id="mail">Mail</button></li>
+                <li><button id="chat">Chat</button></li>
+                <li><button id="ontwerpen">Ontwerpen</button></li>
+                <li><button id="planning">Planning</button></li>
+                <li><button id="programmeren">Programmeren</button></li>
+                <li><button id="taal">Taal</button></li>
+            </ul>
+        </div>
+        <section>
+            <ul>
+                <li class="tool chat">
+                    <div>
+                        <h2>ChatGPT</h2>
+                        <h3>Chat</h3>
+                        <br>
+                        <p>
+                            ChatGPT is een AI-chatbot die natuurlijke gesprekken kan voeren. Het helpt stadsmedewerkers
+                            snel
+                            antwoorden te vinden op vragen en beleid te verduidelijken. Het is een handige tool om
+                            efficiëntie
+                            te
+                            verhogen en snelle ondersteuning te bieden binnen de stadscontext.
+                        </p>
+                    </div>
+                </li>
+                <li class="tool ontwerpen">
+                    <div>
+                        <h2>Canva</h2>
+                        <h3>Ontwerpen</h3>
+                        <br>
+                        <p>
+                            Canva AI is een verzameling van door kunstmatige intelligentie aangedreven functies en tools
+                            die
+                            zijn geïntegreerd in het Canva grafisch ontwerpplatform.
+                            Canva is een populaire online tool die wordt gebruikt voor het maken van een breed scala aan
+                            ontwerpen,
+                            waaronder sociale media graphics, presentaties, posters, logo's en meer.
+                            Canva AI bevat verschillende functies die zijn ontworpen om het ontwerpproces te verbeteren
+                            en
+                            gebruikers te helpen bij het efficiënter maken van professioneel ogende ontwerpen.
+                        </p>
+                    </div>
+                </li>
+                <li class="tool planning">
+                    <div>
+                        <h2>Trello</h2>
+                        <h3>Planning</h3>
+                        <br>
+                        <p>
+                            Trello is een projectmanagementtool die gebruikers helpt bij het organiseren van taken,
+                            projecten en
+                            teams.
+                            Met Trello kunnen gebruikers taken visualiseren en organiseren met behulp van kaarten die op
+                            borden
+                            zijn geplaatst.
+                            Trello AI verwijst naar de functionaliteit binnen Trello die kunstmatige intelligentie (AI)
+                            en
+                            machine learning (ML)
+                            gebruikt om gebruikers te helpen bij het beheren en organiseren van taken op een
+                            efficiëntere
+                            manier.
+                        </p>
+                    </div>
+                </li>
+                <li class="tool chat">
+                    <div>
+                        <h2>Bing</h2>
+                        <h3>Chat</h3>
+                        <br>
+                        <p>
+                            Bing AI verwijst naar de kunstmatige intelligentie (AI) die is geïntegreerd in de
+                            zoekmachine
+                            Bing
+                            van Microsoft.
+                            Deze AI-functies zijn bedoeld om de zoekervaring van gebruikers te verbeteren door relevante
+                            zoekresultaten te leveren,
+                            suggesties te doen en de algehele bruikbaarheid van de zoekmachine te verbeteren.
+                        </p>
+                    </div>
+                </li>
+                <li class="tool taal">
+                    <div>
+                        <h2>Grammarly</h2>
+                        <h3>Taal</h3>
+                        <br>
+                        <p>
+                            Grammarly is een Engelse taalondersteuningstool die gebruikers helpt bij het verbeteren van
+                            hun
+                            schrijfvaardigheid en grammatica in het Engels.
+                            Het biedt verschillende functies die zijn ontworpen om fouten in spelling,
+                            grammatica en interpunctie te identificeren en suggesties te geven voor verbeteringen.
+                            Hoewel
+                            Grammarly voornamelijk gericht is op de Engelse taal,
+                            biedt het ook ondersteuning voor andere talen, waaronder het Nederlands.
+                        </p>
+                    </div>
+                </li>
+                <li class="tool chat">
+                    <div>
+                        <h2>Google Gemini</h2>
+                        <h3>Chat</h3>
+                        <br>
+                        <p>
+                            Google Gemini is een advertentieplatform dat wordt aangeboden door Google en specifiek
+                            gericht
+                            is op
+                            mobiele advertenties.
+                            Het platform is ontworpen om adverteerders te helpen bij het bereiken van hun doelgroep op
+                            mobiele
+                            apparaten, zoals smartphones en tablets,
+                            en om advertentiecampagnes te optimaliseren voor mobiele gebruikerservaringen.
+                        </p>
+                    </div>
+                </li>
+                <li class="tool programmeren">
+                    <div>
+                        <h2>Blackbox</h2>
+                        <h3>Programmeren</h3>
+                        <br>
+                        <p>
+                            Blackbox is een ai die op basis van input je kan helpen met het ontwikkelen van sofware. de
+                            ai
+                            is
+                            geintrigreed met verschillende programmeringstalen.
+                            dit betekent dat je van blackbox kan helpen met bijna elke programmeertaal.
+                            ook is het gemakkelijk om in blackbox imagels als input te geven de ai leest dan de image en
+                            geeft
+                            je een zo goed antwoord moogelijk terug op de vraag die je bij de foto stelden.
+                            Dit kan zijn als je bijvoorbeeld uitleg vraagt over de code. of als je de code niet
+                            begrijpt.
+                        </p>
+                    </div>
+                </li>
+                <li class='tool mail'>
+                    <div>
+                        <h2>Mailbutler</h2>
+                        <h3>Programmeren</h3>
+                        <br>
+                        <p>
+                            Mailbutler is een productiviteitstool voor e-mail die is ontworpen om de efficiëntie van
+                            e-mailgebruik te verbeteren.
+                            Het is een add-on of extensie die beschikbaar is voor populaire e-mailclients zoals Apple
+                            Mail,
+                            Gmail en Outlook.
+                            Mailbutler voegt extra functies en mogelijkheden toe aan deze e-mailclients om gebruikers te
+                            helpen
+                            bij het beheren van hun e-mailcommunicatie op een meer georganiseerde en productieve manier.
+                        </p>
+                    </div>
+                </li>
+            </ul>
         </section>
     </main>
 </body>
