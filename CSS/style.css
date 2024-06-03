@@ -83,6 +83,18 @@ header nav ul li a:hover {
     box-shadow: 10px 10px 50px var(--bgNavColor);
 }
 
+.textbox {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1ch;
+    padding: 2ch;
+}
+
+.textbox div {
+    background-color: var(--bgDivTools);
+    padding: 2ch;
+    border: 2px solid transparent;
+}
 
 /**
 ----------------------------------------------------------------------------
@@ -190,12 +202,14 @@ ul {
     display: flex;
     flex-direction: row;
 
-    button {
-        margin-left: 2ch;
-        padding: 1ch;
-        border-radius: 7px;
-        cursor: pointer;
-    }
+
+}
+
+.categories button {
+    margin-left: 2ch;
+    padding: 1ch;
+    border-radius: 7px;
+    cursor: pointer;
 }
 
 .categories h3 {
